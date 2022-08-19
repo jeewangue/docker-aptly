@@ -16,12 +16,12 @@ set -e
 # For more detail about each of the variables below refer to:
 # https://help.ubuntu.com/community/Repositories/CommandLine
 
-# UPSTREAM_URL="http://archive.ubuntu.com/ubuntu/"
-# REPO=ubuntu
-# OS_RELEASE=bionic
-# DISTS=( ${OS_RELEASE} ${OS_RELEASE}-updates ${OS_RELEASE}-security )
-# COMPONENTS=( main universe )
-# ARCH=amd64
+UPSTREAM_URL="http://mirror.kakao.com/ubuntu/"
+REPO=ubuntu
+OS_RELEASE=focal
+DISTS=( ${OS_RELEASE} ${OS_RELEASE}-updates ${OS_RELEASE}-security )
+COMPONENTS=( main restricted universe multiverse )
+ARCH=amd64
 
 # The variables (as set below) will create a mirror of the Debian Buster repo
 # with the main and update components. If you do mirror these, you'll want to
@@ -38,11 +38,11 @@ set -e
 # The variables (as set below) will create a mirror of the default Raspbian Buster
 # repo (that is used in Raspbian images).
 
-UPSTREAM_URL="http://raspbian.raspberrypi.org/raspbian/"
-REPO=raspbian
-DISTS=( buster )
-COMPONENTS=( main contrib non-free rpi )
-ARCH=armhf
+# UPSTREAM_URL="http://raspbian.raspberrypi.org/raspbian/"
+# REPO=raspbian
+# DISTS=( buster )
+# COMPONENTS=( main contrib non-free rpi )
+# ARCH=armhf
 
 # Override repository related variables by options
 

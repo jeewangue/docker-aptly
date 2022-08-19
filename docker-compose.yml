@@ -1,4 +1,5 @@
 version: '3'
+
 services:
   aptly:
     container_name: aptly
